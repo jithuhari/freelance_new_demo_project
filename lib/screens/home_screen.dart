@@ -30,70 +30,75 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       body: screens[selectedIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.white,
+      bottomNavigationBar: bottomNavigationMethod(),
 
-        currentIndex: selectedIndex,
-        onTap: (int index) {
-          setState(() {
-            selectedIndex = index;
-          });
-        },
+    );
+  }
 
-        selectedItemColor: Colors.blue,
-        unselectedItemColor: Colors.black,
-        // showSelectedLabels: false,
-        // showUnselectedLabels: false,
+  //Bottom Navigation Bar
+  BottomNavigationBar bottomNavigationMethod() {
+    return BottomNavigationBar(
+      backgroundColor: Colors.white,
 
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            //SvgPicture.asset("assets/svg/home.svg"),
-            label: "home",
-            activeIcon: Icon(
-              Icons.home,
-              color: Colors.blue,
-            ),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            //SvgPicture.asset("assets/svg/home.svg"),
-            label: "opportunity",
-            activeIcon: Icon(
-              Icons.home,
-              color: Colors.blue,
-            ),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            //SvgPicture.asset("assets/svg/home.svg"),
-            label: "sell/buy",
-            activeIcon: Icon(
-              Icons.home,
-              color: Colors.blue,
-            ),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            //SvgPicture.asset("assets/svg/home.svg"),
-            label: "wishlist",
-            activeIcon: Icon(
-              Icons.home,
-              color: Colors.blue,
-            ),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            //SvgPicture.asset("assets/svg/home.svg"),
-            label: "profile",
-            activeIcon: Icon(
-              Icons.person,
-              color: Colors.blue,
-            ),
-          ),
-        ],
-      ),
+      currentIndex: selectedIndex,
+      onTap: (int index) {
+        setState(() {
+          selectedIndex = index;
+        });
+      },
 
+      selectedItemColor: Colors.blue,
+      unselectedItemColor: Colors.black,
+      // showSelectedLabels: false,
+      // showUnselectedLabels: false,
+
+      items: const [
+        BottomNavigationBarItem(
+          icon: Icon(Icons.home),
+          //SvgPicture.asset("assets/svg/home.svg"),
+          label: "home",
+          activeIcon: Icon(
+            Icons.home,
+            color: Colors.blue,
+          ),
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.timer),
+          //SvgPicture.asset("assets/svg/home.svg"),
+          label: "opportunity",
+          activeIcon: Icon(
+            Icons.timer,
+            color: Colors.blue,
+          ),
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.card_travel),
+          //SvgPicture.asset("assets/svg/home.svg"),
+          label: "sell/buy",
+          activeIcon: Icon(
+            Icons.card_travel,
+            color: Colors.blue,
+          ),
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.favorite),
+          //SvgPicture.asset("assets/svg/home.svg"),
+          label: "wishlist",
+          activeIcon: Icon(
+            Icons.favorite,
+            color: Colors.blue,
+          ),
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.person),
+          //SvgPicture.asset("assets/svg/home.svg"),
+          label: "profile",
+          activeIcon: Icon(
+            Icons.person,
+            color: Colors.blue,
+          ),
+        ),
+      ],
     );
   }
 }

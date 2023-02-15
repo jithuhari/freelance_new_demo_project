@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:freelance_project_ui/const/colors.dart';
 
 class AboutScreen extends StatelessWidget {
   const AboutScreen({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class AboutScreen extends StatelessWidget {
                 ),
                 Text(
                   'About',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color:mainColor),
                 ),
               ],
             ),
@@ -26,7 +27,9 @@ class AboutScreen extends StatelessWidget {
               height: 15,
             ),
             const Text(
-                'Culpa ea qui nisi laboris dolore aliquip ipsum eu laboris consequat exercitation minim aute ex. Reprehenderit veniam laborum consequat labore veniam. Ipsum irure commodo amet officia cillum veniam. Sint ut nulla est tempor proident. Reprehenderit velit aute cupidatat consequat in. Ipsum excepteur nulla nisi sunt enim nulla quis. Aliqua pariatur ipsum aute aliquip officia culpa quis eu exercitation commodo quis enim.'),
+                'Culpa ea qui nisi laboris dolore aliquip ipsum eu laboris consequat exercitation minim aute ex. Reprehenderit veniam laborum consequat labore veniam. Ipsum irure commodo amet officia cillum veniam. Sint ut nulla est tempor proident. Reprehenderit velit aute cupidatat consequat in. Ipsum excepteur nulla nisi sunt enim nulla quis. Aliqua pariatur ipsum aute aliquip officia culpa quis eu exercitation commodo quis enim.',
+                style: TextStyle(color:mainColor),
+                ),
             const SizedBox(
               height: 15,
             ),
@@ -36,14 +39,14 @@ class AboutScreen extends StatelessWidget {
             ),
             Row(
               children: const [
-                Icon(Icons.coffee_rounded),
+                Icon(Icons.coffee_rounded,color:mainColor),
                 //Image(image: AssetImage('assets/about.png')),
                 SizedBox(
                   width: 15,
                 ),
                 Text(
                   'Preferences & Interests',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color:mainColor),
                 ),
               ],
             ),
@@ -52,7 +55,7 @@ class AboutScreen extends StatelessWidget {
             ),
             Row(
               children: const [
-                Text('Acting, Watching ,Movies , Drama , Mime'),
+                Text('Acting, Watching ,Movies , Drama , Mime',style: TextStyle(color:mainColor),),
               ],
             ),
             const SizedBox(
@@ -65,14 +68,14 @@ class AboutScreen extends StatelessWidget {
 
             Row(
               children: const [
-                Icon(Icons.edit),
+                Icon(Icons.edit,color:mainColor),
                 //Image(image: AssetImage('assets/about.png')),
                 SizedBox(
                   width: 15,
                 ),
                 Text(
                   'Attributes',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color:mainColor),
                 ),
               ],
             ),
